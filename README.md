@@ -1,6 +1,9 @@
 # SKI-STINT-Frontend
 A Task management platform for institutions
 
+# Live Deployment:
+https://skistint.netlify.app/
+
 # Contributor Guidance
 
 1) Fork the repository and clone it into your local pc.<br>
