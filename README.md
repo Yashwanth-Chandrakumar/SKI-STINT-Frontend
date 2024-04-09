@@ -26,3 +26,11 @@ React - Vite
    ```
    npm run dev
    ```
+# File Organisation:
+
+1) Main or root css must be present in App.css file.
+2) CSS for each component must be present in src/components/css
+3) JSX components can be present in src/components
+4) Images must be present in src/assets/img
+5) Icons can be present in src/assets
+Note: These do not affect the website's behaviour but for ease of use.
