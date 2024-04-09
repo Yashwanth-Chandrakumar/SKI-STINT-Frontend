@@ -45,3 +45,67 @@
 .main-tabs div:hover{
     background-color: var(--nav-hover);
 }
+.taskbar{
+    height: calc(100vh - 50vh);
+    width: 100%;
+    background-color: var(--main-top-bar);
+    margin-top: 2rem;
+    border-radius: 15px;
+    padding: 2rem;
+    overflow-y: scroll;
+    
+}
+.taskbar>h3{
+    color: var(--text-side);
+}
+.task-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    
+}
+.task-list>div>div>div{
+    display: flex;
+    justify-content: space-between;
+}
+.task-list>div>div:first-child{
+    width: 100%;
+}
+.task-list>div>div:nth-child(2){
+    width: 0.8%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.task-list>div{
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    background-color: var(--search-nav);
+    margin-bottom: 1rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 0rem 0rem 0rem 2rem;
+}
+
+.task-list h3{
+    margin: 10px 0px 10px 0px;
+    
+}
+.task-list p{
+    margin: 10px 0px 10px 0px;
+}
+
+.taskbar::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+  .taskbar::-webkit-scrollbar-track {
+    background-color: var(--main-top-bar);
+  }
+  
+  .taskbar::-webkit-scrollbar-thumb {
+    background-color: var(--search-nav); 
+    border-radius: 6px; 
+  }

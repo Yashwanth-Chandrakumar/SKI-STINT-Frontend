@@ -7,7 +7,9 @@
     align-items: center;
     justify-content: space-between; 
 }
-
+.nav-container>h2{
+    font-weight: 600;
+}
 .nav-icon-container{
     display: flex;
     gap:5rem;
