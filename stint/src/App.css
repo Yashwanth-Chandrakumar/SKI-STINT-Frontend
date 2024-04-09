@@ -11,6 +11,24 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --bg:#dfdfdf;
+  --top-side-bar:#f0f8ff;
+  --main-top-bar:#f0f8ff;
+  --search-nav:#d7e8fa;
+  --nav-hover: #8498ff;
+  --completed: #5dfd5d;
+  --progress: #ffed4f;
+  --yettostart: #ff8080;
+  --nav-text: #1B0ab4;
+  --logo:#6d82d2 ;
+  --task-description-bg: #a7d0ff;
+  --goal-icon: #2b2323;
+  --text-area:#c9d4f7 ;
+  --text-side: #a2a9cc;
+  --text-color:#000000 ;
+  --cancel-btn: #f8cfcf;
+  --cancel-text: #ba2828;
 }
 
 a {
@@ -26,10 +44,28 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  min-width: 100%;
   min-height: 100vh;
 }
-
+body .dark{
+  --bg:#070D27;
+  --top-side-bar:#111633;
+  --main-top-bar:#1D213E;
+  --search-nav:#A2ADE5;
+  --nav-hover: #8498FF;
+  --completed: #008A00;
+  --progress: #D4BF00;
+  --yettostart: #C70000;
+  --nav-text: #1B0A84;
+  --logo: #6D82D2;
+  --task-description-bg: #4C58B1;
+  --goal-icon: #2b2323;
+  --text-area: #c0cffd;
+  --text-side: #7384de;
+  --text-color: #000000;
+  --cancel-btn: #f8cfcf;
+  --cancel-text: #ba2828;
+}
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
