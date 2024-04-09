@@ -34,3 +34,19 @@ React - Vite
 4) Images must be present in src/assets/img
 5) Icons can be present in src/assets
 Note: These do not affect the website's behaviour but for ease of use.
+
+# Using of root css:
+
+Ex: App.css:
+```
+:root{
+--text-color:#000000;
+}
+```
+
+To use that color:
+```
+.someclass{
+font-color:var(--text-color);
+}
+```
