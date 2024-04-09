@@ -9,3 +9,20 @@ A Task management platform for institutions
 4) If there are no conflicts then the PR will be merged.
 5) If there are any bugs or issue please mention it in the issue section.
    
+# Framework Used: 
+React - Vite
+
+# Installation
+
+1) After cloning the repo, open the terminal and type:
+   ```
+   cd stint
+   ```
+2) Then:
+   ```
+   npm i
+   ```
+3) To run the local web deployment:
+   ```
+   npm run dev
+   ```
