@@ -1,0 +1,47 @@
+.land-container{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bg);
+    padding: 1.5rem;
+}
+.main-bar{
+    background-color: var(--main-top-bar);
+    border-radius: 15px;
+    height: 80px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.main-search{
+    outline: none;
+    border: none;
+    background-color: var(--search-nav);
+    height: 3rem;
+    width: 80%;
+    border-radius: 50px;
+    padding-left: 2rem;
+    position: absolute;
+    top: 21.5%;
+    font-size: var(--normal-font-size);
+}
+.main-search:focus{
+    background-color: var(--nav-hover);
+}
+.main-tabs{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+.main-tabs div{
+    background-color: var(--search-nav);
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 10px;
+    font-size: var(--normal-font-size);
+    color:var(--nav-text);
+}
+.main-tabs div:hover{
+    background-color: var(--nav-hover);
+}
