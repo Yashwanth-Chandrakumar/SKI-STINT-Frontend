@@ -32,24 +32,25 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 .main-tabs div{
     background-color: var(--search-nav);
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 0.5rem 5rem 0.5rem 5rem;
     border-radius: 10px;
     font-size: var(--normal-font-size);
     color:var(--nav-text);
+    cursor: pointer;
 }
 .main-tabs div:hover{
     background-color: var(--nav-hover);
 }
 .taskbar{
-    height: calc(100vh - 50vh);
+    height: calc(100vh - 45vh);
     width: 100%;
     background-color: var(--main-top-bar);
-    margin-top: 2rem;
+    margin-top: 1rem;
     border-radius: 15px;
     padding: 2rem;
     overflow-y: scroll;
@@ -73,8 +74,8 @@
 }
 .task-list>div>div:nth-child(2){
     width: 0.8%;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .task-list>div{
     display: flex;

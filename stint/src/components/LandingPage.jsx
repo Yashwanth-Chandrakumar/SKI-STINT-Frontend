@@ -65,10 +65,10 @@ function LandingPage() {
           <input type="text" className="main-search" placeholder="🔎 Search..." />
         </div>
         <div className="main-tabs">
-          <div onClick={() => handleTabClick("all")}>All Tasks</div>
-          <div onClick={() => handleTabClick("yet")}>Yet to start</div>
-          <div onClick={() => handleTabClick("progress")}>In progress</div>
-          <div onClick={() => handleTabClick("completed")}>Completed</div>
+          <div onClick={() => handleTabClick("all")}><h2>All Tasks</h2></div>
+          <div onClick={() => handleTabClick("yet")}><h2>Yet to start</h2></div>
+          <div onClick={() => handleTabClick("progress")}><h2>In progress</h2></div>
+          <div onClick={() => handleTabClick("completed")}><h2>Completed</h2></div>
         </div>
         <div className="taskbar">
           <h3>Tasks assigned</h3>
@@ -79,7 +79,7 @@ function LandingPage() {
                   <h3>{item.title} assigned</h3>
                   <div>
                     <p>Task Description: {item.description}</p>
-                    <p>Date: {item.date}</p>
+                    <p style={{marginRight:"10px"}}>Date: {item.date}</p>
                   </div>
                 </div>
                 <div className="task-status" style={{ backgroundColor: getTaskStatusColor(item.type) }}>&nbsp;</div>
