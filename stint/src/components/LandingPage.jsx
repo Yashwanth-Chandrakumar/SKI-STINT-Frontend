@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "../assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./css/LandingPage.css";
 
 function LandingPage() {
@@ -56,35 +54,85 @@ function LandingPage() {
     setActiveTab(tab);
   };
 
-  const filteredData = activeTab === "all" ? data : data.filter((item) => item.type === activeTab);
+  const filteredData =
+    activeTab === "all" ? data : data.filter((item) => item.type === activeTab);
 
   return (
     <>
       <div className="land-container">
-        <div className="main-bar">
-          <input type="text" className="main-search" placeholder="🔎 Search..." />
+        <div className="sidebar">
+          <div
+            onClick={() => handleTabClick("all")}
+            className={`sidebar-item ${activeTab === "all" ? "active" : ""}`}
+          >
+            <h3>All Tasks</h3>
+          </div>
+          <div
+            onClick={() => handleTabClick("yet")}
+            className={`sidebar-item ${activeTab === "yet" ? "active" : ""}`}
+          >
+            <h3>Yet to start</h3>
+          </div>
+          <div
+            onClick={() => handleTabClick("progress")}
+            className={`sidebar-item ${
+              activeTab === "progress" ? "active" : ""
+            }`}
+          >
+            <h3>In progress</h3>
+          </div>
+          <div
+            onClick={() => handleTabClick("completed")}
+            className={`sidebar-item ${
+              activeTab === "completed" ? "active" : ""
+            }`}
+          >
+            <h3>Completed</h3>
+          </div>
+          <div
+            onClick={() => handleTabClick("favourites")}
+            className={`sidebar-item ${
+              activeTab === "favourites" ? "active" : ""
+            }`}
+          >
+            <h3>Favourites</h3>
+          </div>
+          <div
+            onClick={() => handleTabClick("logout")}
+            className={`sidebar-item ${activeTab === "logout" ? "active" : ""}`}
+          >
+            <h3>Logout</h3>
+          </div>
         </div>
-        <div className="main-tabs">
-          <div onClick={() => handleTabClick("all")}><h2>All Tasks</h2></div>
-          <div onClick={() => handleTabClick("yet")}><h2>Yet to start</h2></div>
-          <div onClick={() => handleTabClick("progress")}><h2>In progress</h2></div>
-          <div onClick={() => handleTabClick("completed")}><h2>Completed</h2></div>
-        </div>
-        <div className="taskbar">
-          <h3>Tasks assigned</h3>
-          <div className="task-list">
-            {filteredData.map((item, index) => (
-              <div key={index} id={item.type}>
-                <div>
-                  <h3>{item.title} assigned</h3>
+        <div className="main-content">
+          <div className="main-bar">
+            <input
+              type="text"
+              className="main-search"
+              placeholder="Search..."
+            />
+          </div>
+          <div className="taskbar">
+            <h3>Tasks assigned</h3>
+            <div className="task-list">
+              {filteredData.map((item, index) => (
+                <div key={index} id={item.type}>
                   <div>
-                    <p>Task Description: {item.description}</p>
-                    <p style={{marginRight:"10px"}}>Date: {item.date}</p>
+                    <h3>{item.title} assigned</h3>
+                    <div>
+                      <p>Task Description: {item.description}</p>
+                      <p style={{ marginRight: "10px" }}>Date: {item.date}</p>
+                    </div>
+                  </div>
+                  <div
+                    className="task-status"
+                    style={{ backgroundColor: getTaskStatusColor(item.type) }}
+                  >
+                    &nbsp;
                   </div>
                 </div>
-                <div className="task-status" style={{ backgroundColor: getTaskStatusColor(item.type) }}>&nbsp;</div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

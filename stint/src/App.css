@@ -2,31 +2,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 :root {
-  
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-/*========= Colors ===========*/
-  --bg:#dfdfdf;
-  --top-side-bar:#f0f8ff;
-  --main-top-bar:#f0f8ff;
-  --search-nav:#d7e8fa;
+  /*========= Colors ===========*/
+  --bg: #dfdfdf;
+  --top-side-bar: #f0f8ff;
+  --main-top-bar: #f0f8ff;
+  --search-nav: #d7e8fa;
   --nav-hover: #8498ff;
   --completed: #5dfd5d;
   --progress: #ffed4f;
   --yettostart: #ff8080;
   --nav-text: #1B0ab4;
-  --logo:#6d82d2 ;
+  --logo: #6d82d2;
   --task-description-bg: #a7d0ff;
   --goal-icon: #2b2323;
-  --text-area:#c9d4f7 ;
+  --text-area: #c9d4f7;
   --text-side: #a2a9cc;
-  --text-color:#000000 ;
+  --text-color: #000000;
   --cancel-btn: #f8cfcf;
   --cancel-text: #ba2828;
-/* ======= Font size ======= */
+  /* ======= Font size ======= */
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .950rem;
@@ -40,6 +40,7 @@
   --z-back: -10;
   --z-fixed: 100;
 }
+
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
@@ -48,6 +49,7 @@
     --smaller-font-size: .875rem;
   }
 }
+
 *,
 ::before,
 ::after {
@@ -57,9 +59,14 @@
 html {
   scroll-behavior: smooth;
 }
+
 h1,
-h2,h3,h4,h5,h6,
-p{
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   font-weight: normal;
 }
@@ -79,16 +86,18 @@ img {
   height: auto;
   display: block;
 }
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   overflow: hidden;
 }
-body.dark{
-  --bg:#070D27;
-  --top-side-bar:#111633;
-  --main-top-bar:#1D213E;
-  --search-nav:#A2ADE5;
+
+body.dark {
+  --bg: #070D27;
+  --top-side-bar: #111633;
+  --main-top-bar: #1D213E;
+  --search-nav: #A2ADE5;
   --nav-hover: #8498FF;
   --completed: #008A00;
   --progress: #D4BF00;
@@ -104,10 +113,11 @@ body.dark{
   --cancel-text: #ba2828;
 }
 
-.sub-container{
-  padding-left: 2rem;
+.sub-container {
+
   background-color: var(--top-side-bar);
 }
-.dark-mode-toggle{
+
+.dark-mode-toggle {
   margin-top: 0px;
 }
