@@ -1,0 +1,144 @@
+ :root {
+    --background: #cdd2ff;
+    --textarea: #afbde7;
+    --sidebar: #7384de;
+    --button: #6e7fd4;
+    --buttontext: #ffffff;
+    --text: black;
+    --completed: rgb(67, 207, 67);
+    --progress:rgb(203, 203, 78);
+    --yet: red;
+  }
+  
+  body.dark {
+    --background: #686fa5;
+    --textarea: #a6abcb;
+    --sidebar: #414e8c;
+    --button: #274bff;
+    --buttontext: #ffffff;
+    --text: black;
+  }
+  
+  .logo {
+    height: 60px;
+    width: 60px;
+    margin: 15px;
+  }
+  
+  .custom-dialog .MuiPaper-root {
+    border-radius: 1%;
+    padding: 0.1cm;
+    background-color: var(--background);
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .texts {
+    padding: 5px;
+    text-align: start;
+    padding-left: 2%;
+    font-size: 0.85rem;
+    font-family: 'Poppins';
+    font-weight: bold;
+  }
+  
+  .boxassign,
+  .boxtask,
+  .boxdesc,
+  .boxdate,
+  .boxstatus {
+    margin-top: 5px;
+    max-width: 84%;
+    background-color: var(--textarea);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .boxassign:after,
+  .boxtask:after,
+  .boxdesc:after,
+  .boxdate:after,
+  .boxstatus:after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: var(--sidebar);
+  }
+  
+  .boxdesc {
+    height: auto;
+    overflow: auto;
+  }
+  
+  .piththaan {
+    margin-top: 5%;
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px;
+    gap: 10px;
+  }
+  
+  .piththaan .piththaan1 {
+    background-color: var(--button) !important;
+    border: none;
+    border-radius: 4px;
+    color: var(--buttontext);
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* transition: background-color 0.3s ease; */
+  }
+  .piththaan .piththaan4 {
+    background-color: var(--completed) !important;
+    border: none;
+    border-radius: 4px;
+    color: var(--buttontext);
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* transition: background-color 0.3s ease; */
+  }
+  
+  .piththaan .piththaan3 {
+    background-color: var(--progress) !important;
+    border: none;
+    border-radius: 4px;
+    color: var(--buttontext);
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* transition: background-color 0.3s ease; */
+  }
+  .piththaan .piththaan2 {
+    background-color: var(--yet) !important;
+    border: none;
+    border-radius: 4px;
+    color: var(--buttontext);
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* transition: background-color 0.3s ease; */
+  }
+  .piththaan .piththaan1:hover {
+    background-color: var(--button) !important;
+    color: white ;
+  }
+  

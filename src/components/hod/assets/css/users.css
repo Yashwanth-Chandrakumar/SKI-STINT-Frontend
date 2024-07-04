@@ -1,0 +1,441 @@
+.land-container1 {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bg);
+    padding: 1.5rem;
+  }
+  
+  .main-bar1 {
+    background-color: var(--main-top-bar);
+    border-radius: 15px;
+    height: 80px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--search-nav);
+    border-radius: 50px;
+    width: 100%;
+    position: relative;
+    flex-grow: 1;
+  }
+  
+  .main-search1 {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    height: 3rem;
+    width: 100%;
+    border-radius: 50px;
+    padding: 0 1rem;
+    font-size: var(--normal-font-size);
+  }
+  
+  .search-icon {
+    color: black;
+    font-size: 18px;
+    width: 20px;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  
+  .sort-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sort1 {
+    outline: none;
+    border: none;
+    top: 30%;
+    background-color: var(--search-nav);
+    text-align: center;
+    width: 300px;
+    max-width: 30%;
+    height: 3rem;
+    border-radius: 50px;
+    font-size: var(--normal-font-size);
+    color: var(--nav-text);
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+  
+  .sort-icon {
+    color: black;
+    font-size: 18px;
+    width: 20px;
+    font-weight: bold;
+  }
+  
+  .sort1:hover {
+    background-color: var(--nav-hover);
+  }
+  
+
+.taskbar1{
+    height: 73%;
+    width: 100%;
+    background-color: var(--main-top-bar);
+    margin-top: 2rem;
+    border-radius: 15px;
+    padding: 2rem;
+    overflow-y: hidden;
+}
+.taskbar1>h3{
+    color: var(--text-side);
+}
+.task-list1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+
+.vertical-tag {
+    border-left: 5px solid var(--vertical-tag);
+    padding-left: 15px;
+    margin-bottom: 10px;
+    position: relative;
+    transition: background-color 0.5s ease, border-left 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .btn1 {
+    display: none;
+  }
+  
+  .vertical-tag:hover .btn1 {
+    display: block;
+  }
+
+  .vertical-tag:hover {
+    background-color: var(--vertical-tag-hover);
+    border-left: 5px solid var(--vertical-tag-hover2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .det1 {
+    width: calc(100% - 130px); 
+  }
+
+
+
+.task-list1 {
+    height: 400px; 
+    overflow-y: auto;
+    border-radius: 4px;
+    padding: 10px;
+    scroll-behavior: smooth;
+  }
+
+.content1 {
+    display: flex;
+    height: 5rem;
+    flex-direction: row;
+    align-items: center;
+}
+
+.det1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    width: 70rem;
+}
+
+.det1-btn1{
+    max-width: 95%;
+    display: flex;
+}
+
+.icn1 {
+    align-items: center;
+    color: var(--logo);
+}
+
+button {
+    background-color:var(--view-bg);
+    position: relative;
+    color: var(--user-text);
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--view-hover);
+}
+
+
+.task-list1>div>div:first-child{
+    width: 100%;
+}
+.task-list1>div>div:nth-child(2){
+    width: 0.8%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.task-list1>div{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--search-nav);
+    margin-bottom: 1rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 0rem 0rem 0rem 2rem;
+}
+
+.task-list1 h3{
+    margin: 10px 0px 10px 0px;
+    
+}
+.task-list1 p{
+    margin: 10px 0px 10px 0px;
+}
+
+.task-list1::-webkit-scrollbar {
+    width: none;
+    display: none; 
+  }
+  
+  .taskbar1::-webkit-scrollbar-track {
+    background-color: var(--main-top-bar);
+  }
+  
+  .taskbar1::-webkit-scrollbar-thumb {
+    background-color: var(--search-nav); 
+    border-radius: 6px; 
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    padding: 5px; 
+    width: 900px;
+    max-width: 70%;
+  }
+
+  
+
+.taskbar1{
+    height: 73%;
+    width: 100%;
+    background-color: var(--main-top-bar);
+    margin-top: 2rem;
+    border-radius: 15px;
+    padding: 2rem;
+    overflow-y: hidden;
+}
+.taskbar1>h3{
+    color: var(--text-side);
+}
+.task-list1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+
+.vertical-tag {
+    border-left: 5px solid var(--vertical-tag);
+    padding-left: 15px;
+    margin-bottom: 10px;
+    position: relative;
+    transition: background-color 0.5s ease, border-left 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  
+  .btn1 {
+    display: none;
+  }
+  
+  .vertical-tag:hover .btn1 {
+    display: block;
+  }
+
+  .vertical-tag:hover {
+    background-color: var(--vertical-tag-hover);
+    border-left: 5px solid var(--vertical-tag-hover2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .det1 {
+    width: calc(100% - 130px); 
+  }
+
+.task-list1 {
+    height: 400px; 
+    overflow-y: auto;
+    border-radius: 4px;
+    padding: 10px;
+    scroll-behavior: smooth;
+  }
+
+.content1 {
+    display: flex;
+    height: 5rem;
+    flex-direction: row;
+    align-items: center;
+}
+
+.det1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    width: 70rem;
+}
+
+.det1-btn1{
+    max-width: 95%;
+    display: flex;
+}
+
+.icn1 {
+    align-items: center;
+    color: var(--logo);
+}
+
+button {
+    background-color:var(--view-bg);
+    position: relative;
+    color: var(--user-text);
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--view-hover);
+}
+
+
+.task-list1>div>div:first-child{
+    width: 100%;
+}
+.task-list1>div>div:nth-child(2){
+    width: 0.8%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.task-list1>div{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--search-nav);
+    margin-bottom: 1rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 0rem 0rem 0rem 2rem;
+}
+
+.task-list1 h3{
+    margin: 10px 0px 10px 0px;
+    
+}
+.task-list1 p{
+    margin: 10px 0px 10px 0px;
+}
+
+.task-list1::-webkit-scrollbar {
+    width: none;
+    display: none; 
+  }
+  
+  .taskbar1::-webkit-scrollbar-track {
+    background-color: var(--main-top-bar);
+  }
+  
+  .taskbar1::-webkit-scrollbar-thumb {
+    background-color: var(--search-nav); 
+    border-radius: 6px; 
+  }
+
+
+  .search-container {
+    display: flex;
+    border: none;
+    height: 1.3cm;
+    top: 42%;
+    align-items: center;
+    background-color: var(--search-nav);
+    border-radius: 50px;
+    width: 1200px;
+    max-width: 65%;
+    position: relative;
+  } 
+
+
+ .sort-dropdown {
+    position: absolute;
+    top: 220px;
+    justify-content: space-between;
+    border-radius: 5px;
+    right: 170px;
+    width: 10rem;
+    background-color: var(--vertical-tag);
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 5px 10px;
+    z-index: 100;
+  }
+
+ .sort-dropdown4 {
+    position: absolute;
+    top: 220px;
+    justify-content: space-between;
+    border-radius: 5px;
+    right: 100px;
+    width: 15rem;
+    background-color: var(--vertical-tag);
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 5px 10px;
+    z-index: 100;
+  }
+
+  .sort-menu-item:hover{
+    padding: 5px 10px;
+    background-color: var(--sub-hover);
+  }
+  
+  .sort-menu-item {
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  .submenu {
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    top: 50px;
+    left: 100%;
+    background-color: var(--vertical-tag);
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 101;
+  }
+  
+  .submenu div {
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  .submenu div:hover {
+    background-color: var(--sub-hover);
+  }
+  

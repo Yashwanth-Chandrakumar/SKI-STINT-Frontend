@@ -1,0 +1,101 @@
+.nav-container{
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: var(--top-side-bar);
+  color: var(--logo);
+  font-size: var(--h2-font-size);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-container>h2{
+  font-weight: 600;
+  cursor: pointer;
+}
+.nav-icon-container{
+  display: flex;
+  gap:3rem;
+  cursor: pointer;
+}
+
+
+@media (max-width: 800px) {
+  .nav-icon-container{
+    gap: 10px;
+  }
+
+  .MenuIcon {
+    display: none !important;
+  }
+}
+
+
+
+.icon-hover-container {
+position: relative;
+display: inline-block;
+}
+
+.hover-content {
+position: absolute;
+font-size: 15px;
+top: 60px;
+left: -20px;
+transform: translateX(-50%);
+background-color: var(--user-acc-bg);
+padding: 1px;
+color: var(--user-acc-txt);
+border-radius: 3px;
+white-space: nowrap;
+z-index: 1;
+}
+
+
+.popover-content {
+width: 16rem;
+position: relative;
+background-color: var(--user-acc-bg);
+border-radius: 4px;
+overflow: hidden; 
+}
+
+.username {
+height: 4rem;
+background-color: #22384f;
+}
+
+.email {
+height: 5rem;
+position: relative;
+}
+
+#un {
+text-align: center;
+padding-top: 20px;
+color: var(--text-color);
+}
+
+#mail {
+text-align: center;
+color: var(--user-acc-txt);
+padding-top: 40px;
+font-size: 11px;
+}
+
+.circle-container {
+position: absolute;
+top: 3rem;
+left: 50%;
+transform: translateX(-50%);
+width: 3rem;
+height: 3rem;
+background-color: var(--circle-bg, white); 
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+}
+
+.circle-container .MuiSvgIcon-root {
+color: var(black); 
+}

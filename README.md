@@ -1,55 +1,73 @@
-# SKI-STINT-Frontend
-A Task management platform for institutions
+# **DEMO**
+[ski-stint.vercel.app](https://ski-stint-seven.vercel.app/)
 
-# Live Deployment:
-https://skistint.netlify.app/
+# Getting Started with Create React App
 
-# Contributor Guidance
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-1) Fork the repository and clone it into your local pc.<br>
-2) As you perform changes do it on a whole for example a complete component and push it to your main.
-3) Create a pull request so it can be verified that there are no code conflicts.
-4) If there are no conflicts then the PR will be merged.
-5) If there are any bugs or issue please mention it in the issue section.
-   
-# Framework Used: 
-React - Vite
+## Available Scripts
 
-# Installation
+In the project directory, you can run:
 
-1) After cloning the repo, open the terminal and type:
-   ```
-   cd stint
-   ```
-2) Then:
-   ```
-   npm i
-   ```
-3) To run the local web deployment:
-   ```
-   npm run dev
-   ```
-# File Organisation:
+### `npm start`
 
-1) Main or root css must be present in App.css file.
-2) CSS for each component must be present in src/components/css
-3) JSX components can be present in src/components
-4) Images must be present in src/assets/img
-5) Icons can be present in src/assets
-Note: These do not affect the website's behaviour but for ease of use.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-# Using of root css:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Ex: App.css:
-```
-:root{
---text-color:#000000;
-}
-```
+### `npm test`
 
-To use that color:
-```
-.someclass{
-font-color:var(--text-color);
-}
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

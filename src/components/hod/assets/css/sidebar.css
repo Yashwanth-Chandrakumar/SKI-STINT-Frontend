@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+    width: 250px;
+    /* transition: width 0.3s; */
+  }
+  
+  .sidebar.close {
+    width: 80px;
+    overflow-x: hidden;
+  }
+  
+  .menu-links .nav-link .text {
+    display: inline-block;
+    opacity: 1;
+    /* transition: opacity 0.3s; */
+  }
+  
+  .sidebar.close .menu-links .nav-link .text {
+    display: none;
+  }
+  
+  .sub-menu-links {
+    padding-left: 1rem;
+  }
+  
+
+  .sidebar.close .menu-links .nav-link .icon {
+    margin-left: 12px;     
+  }
+  
+  
+  .sidebar.close .dropdown-icon {
+    display: none;
+  }
+  
+.sidebar {
+    width: 250px;
+    transition: width 0.3s ease;
+  }
+  
+  .sidebar.close {
+    width: 80px; 
+  }
+
+:root {
+    
+    --body-color: #E4E9F7;
+    --sidebar-color: #111643;
+    --primary-color: #7384DE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #d9dadb;
+    --hover: #7CBCFF;
+
+/*     
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease; */
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+body.dark {
+    --body-color: #18191a;
+    --sidebar-color: #1D213E;
+    --primary-color: #7384DE;
+    --toggle-color: #fff;
+    --text-color: #b6b7b8;
+    --hover: #e4e6ef;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+    transition: var(--tran-05);
+    z-index: 100;
+}
+
+.sidebar li {
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sidebar header .image,
+.sidebar .icon {
+    min-width: 60px;
+    border-radius: 6px;
+}
+
+.sidebar .icon{
+    min-width: 30px;
+    border-radius: 6px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-left: 1rem;
+}
+
+
+.text {
+    margin-left: .9rem;
+}
+
+.sidebar .text,
+.sidebar .icon, .logo-text {
+    color: var(--text-color);
+    transition: var(--tran-03);
+}
+
+.sidebar .text {
+    font-size: 17px;
+    white-space: nowrap;
+    opacity: 1;
+}
+
+
+.sidebar header .image-text {
+    display: flex;
+    align-items: center;
+}
+.sidebar header .logo-text {
+    display: flex;
+    flex-direction: column;
+}
+header .image-text .name {
+    margin-top: 2px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+header .image-text .profession {
+    font-size: 16px;
+    margin-top: -2px;
+    display: block;
+}
+
+.sidebar header .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar header .image img {
+    width: 40px;
+    border-radius: 6px;
+}
+
+.sidebar .menu {
+    margin-top: 40px;
+}
+
+.nav-link {
+    transition: background 0.2s ease, border-radius 0.2s ease;
+}
+
+.nav-link:hover {
+    background: #070D27;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.ease {
+    transition: all 0.3s ease-out;
+    padding: 0.4rem 1.7rem; 
+    margin: 0.2rem 0;
+  }
+  
+  .ease:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .menu-bar {
+    overflow: hidden;
+  }
+
+.sidebar .menu-bar {
+    height: calc(100% - 55px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+
+.menu-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.home {
+    position: absolute;
+    top: 0;
+    top: 0;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
+
+.home .text {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 12px 60px;
+}
+
+.sidebar {
+    transition: width 0.3s ease;
+  }
+    
+  .sidebar {
+    overflow-y: auto;
+    height: 100vh;
+  }
+  
+  .bottom-content {
+    position: sticky;
+    bottom: 0;
+  }
+  
+.menu {
+    max-height: 800px;
+    overflow-y: auto;
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.bottom-content {
+    border-top: .5px solid #ccc; 
+  }
+
+  .sidebar::-webkit-scrollbar {
+    width: none;
+    display: none; 
+  }

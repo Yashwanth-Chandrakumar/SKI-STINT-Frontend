@@ -1,0 +1,246 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+/*========= Colors ===========*/
+  --bg:#e6e6e6;
+  --taskbar-text: #111633;
+  --tasklist-text: #111633;
+  --top-side-bar: #ffffff;
+  --main-top-bar:#ffffff;
+  /* --vertical-tag: #91A6FF; */
+  --vertical-tag: #c6d1ff;
+  --vertical-tag-hover: #e2ebf5;
+  --vertical-tag-hover2: #91A6FF;
+  --sub-hover:#f0f0f0;
+  --search-nav:#d7e8fa;
+  --nav-hover: #B0D6FE;
+  --completed: #5dfd5d;
+  --progress: #ffed4f;
+  --yettostart: #ff8080;
+  --nav-text: #1B0ab4;
+  --view-text: #1B0A84;
+  --view-hover:#7CBCFF;
+  --view-bg:#B0D6FE;
+  --logo: #345578;
+  --task-description-bg: #a7d0ff;
+  --goal-icon: #2b2323;
+  --text-area:#c9d4f7 ;
+  --text-side: #161c3b;
+  --user-text: #345578;
+  --text-color:#000000 ;
+  --cancel-btn: #f8cfcf;
+  --cancel-text: #ba2828;
+  --user-acc-bg: #d5d5d5;
+  --user-acc-txt: #18191a;
+  /* --uname:#888686 ; */
+  --uname:#5f5c5c ;
+/* ======= Font size ======= */
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: .950rem;
+  --smaller-font-size: .75rem;
+  /*===== Margins =====*/
+  --mb-2: 1rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+  /*===== z index =====*/
+  --z-back: -10;
+  --z-fixed: 100;
+}
+@media screen and (min-width: 100px) {
+  :root {
+    --big-font-size: 3.5rem;
+    --h2-font-size: 1.5rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: .875rem;
+  }
+}
+
+
+
+/* confuse aaga vena idhu sidebar ku layout */
+
+.app-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px; 
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  position: fixed;
+}
+
+.content {
+  flex: 1;
+  overflow: auto;
+}
+
+/* iththoda niruthikkanum */
+
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+}
+h1,
+h2,h3,h4,h5,h6,
+p{
+  margin: 0;
+  font-weight: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+body.dark{
+  --bg:#070D27;
+  --taskbar-text:#9AABFF ;
+  --tasklist-text: #9AABFF;
+  --top-side-bar:#21253a;
+  --main-top-bar:#1D213E;
+  --icon-color:#111633;
+
+  --vertical-tag: #c6d1ff;
+  --vertical-tag-hover: #c5d0ff;
+  --vertical-tag-hover2: #4d95e1;
+  --sub-hover:#abc1d2;
+  --shadow: ; 
+
+  --search-nav:#A2ADE5;
+  --nav-hover: #8498FF;
+  --completed: #008A00;
+  --progress: #D4BF00;
+  --yettostart: #C70000;
+  --nav-text: #1B0A84;
+  --view-text: #1B0A84;
+  --view-bg:#8498FF;
+  --view-hover:#C7D0FF;
+  --logo: #6D82D2;
+  --task-description-bg: #4C58B1;
+  --goal-icon: #2b2323;
+  --text-area: #c0cffd;
+  --text-side: #9aa8f1;
+  /* --user-text: #203955; */
+  --user-text: #113357;
+  --text-color: #000000;
+  --cancel-btn: #ba2828;
+  --cancel-text: #f8cfcf;
+  --user-acc-bg: #e0e2e3;
+  --user-acc-txt: #18191a;
+  --uname:#cfc8c8 ;
+}
+
+.sub-container{
+  padding-left: 2rem;
+  background-color: var(--top-side-bar);
+}
+.dark-mode-toggle{
+  margin-top: 0px;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar {
+  width: 250px;
+  transition: width 0.3s ease;
+}
+
+.sidebar.close {
+  width: 80px;
+}
+
+.sidebar + .main-content {
+  margin-left: 250px;
+}
+
+.sidebar.close + .main-content {
+  margin-left: 80px;
+}
+
+
+@media (max-width: 769px) {
+  .app-wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    display: block;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .sidebar {
+    height: 100%;
+  }
+
+  .sidebar.open + .main-content {
+    margin-left: 0;
+  }
+}
+
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: white;
+}
+
+

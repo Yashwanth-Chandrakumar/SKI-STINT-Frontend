@@ -1,0 +1,12 @@
+[
+    { "name": "Dr.M.Mickey Mouse", "department": "CSE", "designation": "HOD" },
+    { "name": "Dr.B.Bugs Bunny", "department": "CSE", "designation": "HOD" },
+    { "name": "Mr.S.SpongeBob", "department": "Civil", "designation": "Asst.Prof" },
+    { "name": "Ms.D.Dora", "department": "CSE", "designation": "Asst.Prof" },
+    { "name": "Ms.S.D.Scooby-Doo", "department": "Mech", "designation": "Asst.Prof" },
+    { "name": "Mr.V.Tom", "department": "CSE", "designation": "Asst.Prof" },
+    { "name": "Mr.S.Jerry", "department": "CSE", "designation": "Asst.Prof" },
+    { "name": "Ms.D.Donald Duck", "department": "CSE", "designation": "Asst.Prof" },
+    { "name": "Dr.Charlie Brown", "department": "EEE", "designation": "HOD" },
+    { "name": "Dr.Pikachu", "department": "ECE", "designation": "HOD" }
+]
