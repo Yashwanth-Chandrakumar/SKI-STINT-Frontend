@@ -1,25 +1,25 @@
-import React, { useState, useContext, useEffect, useMemo } from "react";
-import { useNavigate } from "react-router-dom";
+import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import SearchIcon from "@mui/icons-material/Search";
 import SwapVertIcon from "@mui/icons-material/SwapVert";
-import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
-import { SidebarContext } from "./Sidebar";
+import React, { useContext, useEffect, useMemo, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../assets/css/users.css";
+import { SidebarContext } from "./Sidebar";
 
-import tom from "../assets/img/tom1.png";
-import patlu from "../assets/img/patlu.png";
-import motu from "../assets/img/motu.png";
-import shinchan from "../assets/img/shinchan.png";
-import jackie from "../assets/img/jackie.png";
-import pikachoo from "../assets/img/pikachoo.png";
-import charlie from "../assets/img/charlie.png";
-import duck from "../assets/img/duck.png";
-import jerry from "../assets/img/jerry.png";
-import scooby from "../assets/img/scooby.png";
-import dora from "../assets/img/dora.png";
-import mickey from "../assets/img/mickey1.png";
 import bugs from "../assets/img/bugs.png";
+import charlie from "../assets/img/charlie.png";
+import dora from "../assets/img/dora.png";
+import duck from "../assets/img/duck.png";
+import jackie from "../assets/img/jackie.png";
+import jerry from "../assets/img/jerry.png";
+import mickey from "../assets/img/mickey1.png";
+import motu from "../assets/img/motu.png";
+import patlu from "../assets/img/patlu.png";
+import pikachoo from "../assets/img/pikachoo.png";
+import scooby from "../assets/img/scooby.png";
+import shinchan from "../assets/img/shinchan.png";
 import sbob from "../assets/img/spongebob.png";
+import tom from "../assets/img/tom1.png";
 
 function Users() {
   const { filter, setFilter } = useContext(SidebarContext);
@@ -84,7 +84,7 @@ function Users() {
   };
 
   const handleUserClick = (userName) => {
-    navigate(`/user/${userName}`);
+    navigate(`user/${userName}`);
   };
 
   const getTitle = () => {

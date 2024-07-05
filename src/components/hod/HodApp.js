@@ -44,7 +44,7 @@ export default function HodApp() {
                         <Route path="/hod/completedtasks" element={<Task filterType="completed" />} />
                         <Route path="/hod/yettasks" element={<Task filterType="yet" />} />
                         <Route path="/hod/users" element={<UserSB />} />
-                        <Route path="/hod/user/:userName" element={<Userid />} />
+                        <Route path="/hod/users/user/:userName" element={<Userid />} />
                         <Route path="/hod/allusers" element={<Users />} />
                       </Routes>
                     </div>

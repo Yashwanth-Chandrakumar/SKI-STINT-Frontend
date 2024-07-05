@@ -31,7 +31,7 @@ export default function PrinciApp() {
               <Route path='principal/completedtasks' element={<Task filterType="completed" />} />
               <Route path='principal/yettasks' element={<Task filterType="yet" />} />
               <Route path='principal/users' element={<UserSB />} />
-              <Route path='principal/user/:userName' element={<Userid />} />
+              <Route path='principal/users/user/:userName' element={<Userid />} />
               <Route path='principal/allusers' element={<Users />} />
             </Routes>
           </div>
